@@ -1,0 +1,33 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.horizontal-nav{
+    background-color: #000117;
+    height: 80px;
+    margin: 0;
+    overflow: auto;
+}
+.horizontal-nav ul{
+    display: flex;
+    float: right;
+    padding: 5px;
+}
+.horizontal-nav ul h3{
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+.button{
+    color: white;
+    background-color: #000117;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
