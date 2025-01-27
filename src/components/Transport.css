@@ -1,0 +1,160 @@
+/* General Styling */
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Transport Page Container */
+.transport-container {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Transport Header */
+h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Transport Form */
+.transport-form {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transport-form h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.transport-form input,
+.transport-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.transport-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transport-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Transport Table */
+.transport-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transport-table th,
+.transport-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.transport-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.transport-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transport-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* No Data Available */
+.transport-container p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Small Screens */
+@media (max-width: 768px) {
+  .transport-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .transport-form {
+      padding: 15px;
+  }
+
+  .transport-table th,
+  .transport-table td {
+      font-size: 0.9em;
+  }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+  .transport-container {
+      padding: 5px;
+  }
+
+  h1 {
+      font-size: 1.2em;
+  }
+
+  .transport-form {
+      padding: 10px;
+  }
+
+  .transport-form input,
+  .transport-form select {
+      font-size: 0.9em;
+  }
+
+  .transport-table th,
+  .transport-table td {
+      font-size: 0.8em;
+  }
+
+  .transport-table {
+      font-size: 0.9em;
+  }
+}

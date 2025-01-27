@@ -1,0 +1,154 @@
+/* General Styling */
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Front Desk Container */
+.front-desk-container {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Front Desk Header */
+.front-desk-header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Front Desk Actions - Inputs and Buttons */
+.front-desk-actions {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.front-desk-actions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-desk-actions input,
+.front-desk-actions select,
+.front-desk-actions textarea {
+    margin: 5px 0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.front-desk-actions button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.front-desk-actions button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Small Screens */
+@media (max-width: 768px) {
+    .front-desk-container {
+        padding: 10px; /* Reduced padding for small screens */
+    }
+
+    .front-desk-header {
+        font-size: 1.2em; /* Slightly smaller header for smaller screens */
+    }
+
+    .front-desk-actions {
+        grid-template-columns: 1fr; /* Stack the inputs and buttons vertically */
+        margin-top: 10px;
+    }
+
+    .front-desk-actions div {
+        width: 100%; /* Full width input fields */
+    }
+
+    .front-desk-actions button {
+        padding: 12px 0; /* Adjust padding for better look on small screens */
+        font-size: 1.1em; /* Slightly larger text for better accessibility */
+    }
+
+    .front-desk-activities {
+        padding: 10px;
+    }
+
+    .front-desk-activities h3 {
+        font-size: 1.1em; /* Adjusted title size */
+    }
+
+    .front-desk-activities li {
+        font-size: 0.85em; /* Slightly smaller font for better readability */
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+    .front-desk-container {
+        padding: 5px; /* Even less padding for small mobile devices */
+    }
+
+    .front-desk-header {
+        font-size: 1em; /* Smaller font size for very small screens */
+        text-align: center; /* Center text for a cleaner look */
+    }
+
+    .front-desk-actions {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        margin-top: 10px;
+    }
+
+    .front-desk-actions div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .front-desk-actions input,
+    .front-desk-actions select,
+    .front-desk-actions textarea {
+        padding: 12px;
+        font-size: 1em; /* Larger text for easier readability on small screens */
+    }
+
+    .front-desk-actions button {
+        width: 100%; /* Full-width buttons for mobile */
+        padding: 15px 0; /* Increased padding for easier tapping */
+        font-size: 1.1em; /* Larger text for accessibility */
+    }
+
+    .front-desk-activities {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .front-desk-activities h3 {
+        font-size: 1.1em;
+    }
+
+    .front-desk-activities li {
+        font-size: 0.85em;
+        padding-left: 10px; /* Added padding for readability */
+    }
+}

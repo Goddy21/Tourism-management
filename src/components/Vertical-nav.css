@@ -1,59 +1,167 @@
-*{
+/* General Styles */
+* {
     list-style-type: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
-.nav{
-    width: 300px;
-    margin: 0px;
-    background-color:#000117;
+
+/* Navigation Bar Styles */
+.nav {
+    width: 100%;
+    margin: 0;
+    background-color: #000117;
+    color: white;
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100%; /* Elongating to full height */
     overflow: auto;
     opacity: 0.9;
+    transition: width 0.3s ease; /* Smooth transition */
+    padding-top: 20px;
+    z-index: 10; /* Ensure it stays above other content */
 }
-.nav img{
+
+.nav.closed {
+    width: 0;
+    padding-top: 0;
+}
+
+.nav.open {
+    width: 250px;
+}
+
+/* Logo Styles */
+.nav img {
     height: 50px;
     width: 50px;
-    display: flex;
-    margin-left: 100px;
+    display: block;
+    margin: 20px auto;
 }
-.search-container{
+
+/* Search Container */
+.search-container {
     margin: 10px;
+    display: flex;
+    justify-content: center;
 }
-.search-form input{
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.search-form input {
     background-color: #000039;
     color: white;
     border: none;
     padding: 5px;
-    width: 200px;
-} 
-.fa-search{
-    color: white;
-    width: 30px;
+    flex: 1;
+    max-width: 200px;
+    border-radius: 4px;
 }
-p{
+
+.fa-search {
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Section Titles */
+p {
     color: white;
     margin: 10px;
     font-size: 0.9rem;
 }
 
-ul li{
+/* Navigation Links */
+ul li {
     display: block;
-    color:white;
-    padding: 8px 16px;
-    width: 200px;
+    color: white;
+    padding: 10px 16px;
     font-size: 0.9rem;
     cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 ul li.active {
     background-color: white;
     color: #000039;
 }
+
 ul li:hover:not(.active) {
     background-color: white;
     color: #000039;
 }
-hr{
+
+/* Divider Line */
+hr {
     margin: 10px;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    display: none; /* Hidden by default, shown on mobile */
+    background-color: #000039;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        width: 250px;
+        padding-top: 20px;
+    }
+
+    .nav.closed {
+        width: 0;
+    }
+
+    .nav.open {
+        width: 250px;
+    }
+
+    .toggle-btn {
+        display: block;
+        margin: 20px;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .search-form input {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        width: 200px;
+    }
+
+    .nav img {
+        height: 40px;
+        width: 40px;
+    }
+
+    ul li {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .search-form input {
+        max-width: 150px;
+    }
 }

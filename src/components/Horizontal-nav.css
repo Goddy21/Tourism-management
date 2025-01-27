@@ -1,33 +1,115 @@
-*{
+/* General Styles */
+* {
     list-style-type: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-}
-.horizontal-nav{
+    box-sizing: border-box;
+  }
+  
+  /* Horizontal Navigation Bar */
+  .horizontal-nav {
     background-color: #000117;
     height: 80px;
     margin: 0;
-    overflow: auto;
-}
-.horizontal-nav ul{
+    overflow: hidden; /* Prevent overflow issues */
     display: flex;
-    float: right;
-    padding: 5px;
-}
-.horizontal-nav ul h3{
+    align-items: center;
+    justify-content: space-between; /* Space between logo and right-aligned content */
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  /* Right-aligned Section */
+  .horizontal-nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px; /* Spacing between text and button */
+    justify-content: flex-end; /* Keep the content floated to the right */
+    flex-grow: 1; /* Push the right-aligned section to the end */
+  }
+  
+  /* Welcome Text */
+  .horizontal-nav ul h3 {
     color: white;
-    margin: 5px;
-    font-size: 1.5rem;
-}
-.button{
+    margin: 0;
+    font-size: 1.2rem;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Sign-In and Sign-Up Button */
+  .button {
     color: white;
     background-color: #000117;
     border: 1px solid white;
     border-radius: 15px;
-    padding: 5px 10px;
-    justify-content: center;
-    align-items: center;
+    padding: 5px 15px;
     text-align: center;
     display: flex;
+    align-items: center;
     cursor: pointer;
-}
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: #000117;
+  }
+  
+  /* Toggle Button for Sign In/Sign Up */
+  .toggle-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    color: #ffd700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .horizontal-nav {
+      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+      height: auto; /* Adjust height dynamically */
+    }
+  
+    .horizontal-nav ul {
+      justify-content: flex-end; /* Keep content floated to the right */
+      width: 100%; /* Make the section span the full width */
+      flex-wrap: wrap; /* Stack content vertically if needed */
+      text-align: right; /* Ensure alignment remains correct */
+    }
+  
+    .horizontal-nav ul h3 {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .button {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .toggle-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .horizontal-nav ul h3 {
+      font-size: 0.9rem; /* Further reduce font size for small screens */
+    }
+  
+    .button {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  
+    .toggle-button {
+      font-size: 0.8rem;
+    }
+  }
+  

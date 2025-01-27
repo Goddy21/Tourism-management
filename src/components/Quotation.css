@@ -1,0 +1,134 @@
+/* General Styling */
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Quotation Page Container */
+  .quotation-container {
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  /* Quotation Header */
+  h1 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Quotation Form */
+  .quotation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quotation-form input,
+  .quotation-form select,
+  .quotation-form textarea,
+  .quotation-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .quotation-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .quotation-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Quotation Details */
+  .quotation-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .quotation-details h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .quotation-details p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .quotation-details h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Error and Success Messages */
+  .error-message {
+    color: red;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For Tablets and Small Screens */
+  @media (max-width: 768px) {
+    .quotation-container {
+      padding: 15px;
+    }
+  
+    .quotation-form {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  }
+  
+  /* For Mobile Screens */
+  @media (max-width: 480px) {
+    .quotation-container {
+      padding: 10px;
+    }
+  
+    .quotation-form {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .quotation-details h2 {
+      font-size: 1.8em;
+    }
+  }
+  
